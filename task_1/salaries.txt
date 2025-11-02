@@ -1,0 +1,15 @@
+Alex Korp,3000
+Nikita Borisenko,2000
+Zhen Raju,1000
+Jaz Korp,3500
+Baz Borisenko,5000
+Lighter Raju,7000
+John Korp,13000
+Griph Borisenko,2300
+Ram Raju,4000
+Nick Korp,3500
+Nikita Borisenko,2200
+Sam Raju,1100
+Alex Korp,4000
+Nikita Borisenko,2000
+Sitar Raju,1000
