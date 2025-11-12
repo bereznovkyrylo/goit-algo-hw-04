@@ -37,7 +37,7 @@ def main():
                 print(show_phone(args[0],contacts))
 
             elif command=='all':
-                show_all(contacts)
+                print(show_all(contacts))
             else:
                 print("Invalid command.")
     except Exception as e:

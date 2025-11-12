@@ -18,6 +18,4 @@ def show_phone(name,contacts):
     return contacts[name]
 
 def show_all(contacts):
-    #return contacts.values() better for task requirements
-    for key in contacts:
-        print(f"{key}: {contacts[key]}") # better for visibility
+    return list(contacts.items())
