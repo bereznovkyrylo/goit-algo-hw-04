@@ -14,21 +14,7 @@ def main():
                 print('How can I help you? ')
 
             elif command=='add' :
-                name=args[0]
-                is_exist_contact=contacts.get(name,None)
-
-                if is_exist_contact is not None:
-                    answer=input(f'Contact with name {name} already exist. Do you want to update contact? y/n ').strip().lower()
-                    if answer=='y':
-                        print(update_contact(args,contacts))
-                    elif answer!='n':
-                        print('Wrong command')
-                    continue
-
-                else:
-                    print(add_contact(args,contacts))
- 
-                
+                print(add_contact(args,contacts))
 
             elif command=='change':
                 print(update_contact(args,contacts))

@@ -3,10 +3,21 @@ def parse_user_input(string):
     return command,*args
 
 
-def add_contact(args,contacts):
-    name,phone=args
-    contacts[name]=phone
-    return "Contact added."
+def add_contact(args,contacts):                
+    name=args[0]
+    is_exist_contact=contacts.get(name,None)
+
+    if is_exist_contact is not None:
+        answer=input(f'Contact with name {name} already exist. Do you want to update contact? y/n ').strip().lower()
+        if answer=='y':
+            return update_contact(args,contacts)
+        elif answer!='n':
+            return 'Wrong command'
+
+    else:            
+        name,phone=args
+        contacts[name]=phone
+        return "Contact added."
 
 def update_contact(args,contacts):
     name,phone=args
